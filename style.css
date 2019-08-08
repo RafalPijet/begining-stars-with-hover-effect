@@ -1,0 +1,73 @@
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.row {
+    background-color: #7ed6df;
+    border-radius: 10px;
+}
+
+.star8 {
+    display: inline-block;
+    margin: 2em;
+    transform: rotate(22deg);
+    transition: background linear .3s;
+}
+
+.star8::before {
+    background-color: #ffffff;
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    transform: rotate(45deg);
+}
+
+.star8, .star8::before, i.fa {
+    width: 80px;
+    height: 80px;
+    transition: ease-in-out .3s;
+}
+
+.star8:hover::before ,.star8:hover, .star8:hover i.fa {
+    color: #ffffff;
+}
+
+.fa {
+    position: absolute;
+    background-color: #ffffff;
+    font-size: 60px;
+}
+
+.fa::before {
+    transform: rotate(-22deg);
+    position: absolute;
+    margin: 10px;
+}
+
+.gold, .gold::before {
+    border: 6px solid #ffc107;
+}
+
+.gold:hover::before, .gold:hover, .gold:hover i.fa {
+    background-color: #ffc107;
+}
+
+.orange, .orange::before {
+    border: 6px solid #fd7e33;
+}
+
+.orange:hover::before, .orange:hover, .orange:hover i.fa {
+    background-color: #fd7e33;
+}
+
+.blue, .blue::before {
+    border: 6px solid #3fb0ac;
+}
+
+.blue:hover, .blue:hover::before, .blue:hover i.fa {
+    background-color: #3fb0ac;
+}
+
